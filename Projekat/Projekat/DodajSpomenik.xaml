@@ -1,0 +1,133 @@
+﻿<Page x:Class="Projekat.DodajSpomenik"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:System="clr-namespace:System;assembly=mscorlib"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="775"
+      Title="DodajSpomenik" Height="630" Width="1300">
+
+
+
+
+    <Grid>
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+
+
+            <Grid Background="White"/>
+
+
+
+            <Label Content="Id:"  Margin="54,32,508,539" FontSize="22" FontWeight="Bold" />
+            <TextBox x:Name="idTxT" BorderBrush="Black" Padding="2" Margin="256,10,65,537" TextWrapping="Wrap" Height="40" Text="{Binding Spomenik.Id, UpdateSourceTrigger=PropertyChanged}" RenderTransformOrigin="0.5,0.5" FontSize="22"/>
+           
+            <Label Content="Naziv:"  Margin="54,103,508,487" FontSize="22" FontWeight="Bold"/>
+            <TextBox x:Name="nazivTxT" Height="40" BorderBrush="Black" Padding="2" Margin="256,70,65,454" TextWrapping="Wrap" Text="{Binding Path=Spomenik.Naziv,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" FontSize="22" />
+
+            <Label Content="Opis:"  Margin="54,200,508,385" FontSize="22" FontWeight="Bold"/>
+            <TextBox x:Name="opisTxt" BorderBrush="Black" Padding="2" Height="60" Margin="256,140,64,359" TextWrapping="Wrap" Text="{Binding Path=Spomenik.Opis,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"  AcceptsReturn="True" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" RenderTransformOrigin="0.5,0.5" FontSize="22"/>
+           
+            <Label x:Name="prihod" Content="Godisnji prihod:" Margin="54,275,419,266" FontSize="22" FontWeight="Bold"/>
+            <TextBox x:Name="prihodTxt" BorderBrush="Black" Padding="2" Height="40" Margin="256,230,65,280" TextAlignment="Left" TextWrapping="Wrap" Text="{Binding Path=Spomenik.GPrihod,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" FontSize="22"/>
+            <Label x:Name="labella" Content="" FontWeight="Bold" Foreground="Red" Margin="256,315,64,280" FontSize="16"/>
+            <TextBlock Text="USD" Margin="592,284,0,320" Foreground="#FF168AA4" RenderTransformOrigin="0.5,0.5" FontSize="20" FontWeight="Bold"/>
+
+            <Label Content="Datum otkrivanja:" Margin="54,350,399,171" FontSize="22" FontWeight="Bold"/>
+            <DatePicker x:Name="datePicker" BorderBrush="Black" HorizontalAlignment="Left"  Margin="256,339,0,246" Width="330" SelectedDate="{Binding Path=Spomenik.Datum,Mode=OneWay,UpdateSourceTrigger=PropertyChanged,TargetNullValue={x:Static System:DateTime.Now}}" FontSize="22">
+                <DatePicker.Resources>
+                    <Style TargetType="DatePickerTextBox">
+                        <Setter Property="IsReadOnly" Value="True"/>
+                    </Style>
+                </DatePicker.Resources>
+            </DatePicker>
+
+            <Label Content="Era porekla:" Margin="54,438,399,143" FontSize="22" FontWeight="Bold"/>
+            <ComboBox x:Name="eraPoreklaCbox"  BorderBrush="Black" Margin="256,429,64,156" IsEditable="False" ItemsSource="{Binding Path=eraPorekla, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="22"/>
+            <Label Content="Turisticki status:"  Margin="54,515,394,73" FontSize="22" FontWeight="Bold" />
+            <ComboBox x:Name="turistickiStatusCbox" BorderBrush="Black" Margin="256,515,64,73" IsEditable="False" ItemsSource="{Binding Path=turistickiSt,UpdateSourceTrigger=PropertyChanged}" FontSize="22"/>
+
+
+
+
+        </Grid>
+
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="13*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Background="White" Grid.RowSpan="2"/>
+            <Label Content="Tip:"  Margin="57,32,420,416" FontSize="22" FontWeight="Bold" />
+            <ComboBox x:Name="tipoviCbox" BorderBrush="Black" Margin="315,32,60,0" VerticalAlignment="Top" IsEditable="False" ItemsSource="{Binding Path=Tipovi,UpdateSourceTrigger=PropertyChanged}" Height="40" FontSize="22">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Ime}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+
+            <Label Content="Ikonica:"  Margin="57,105,340,376" FontSize="22" FontWeight="Bold" />
+            <Border BorderThickness="1" BorderBrush="Black" CornerRadius="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="50" Height="48" Margin="315,94,0,0">
+                <Image x:Name="icon"  Margin="-1,0,-1,-1" VerticalAlignment="Top" Height="47" Source="{Binding Path=Spomenik.Ikonica,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"/>
+            </Border>
+            <Button Content="Učitaj" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="153" Click="Ucitaj_Click" Margin="437,0,0,404" Height="37" FontSize="20" FontWeight="Bold" />
+
+
+            <Label Content="Etikete:"  Margin="57,270,420,239" FontSize="22" FontWeight="Bold"/>
+
+            <ListBox x:Name="etiketeList" BorderBrush="Black" SelectionMode="Multiple"  VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="131" Margin="315,176,60,0" ItemsSource="{Binding Path=Etikete,UpdateSourceTrigger=PropertyChanged}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Margin="0 0 10 0 " Grid.Column="0" >
+                                <Rectangle Width="100" Fill="{Binding Path=Boja}"></Rectangle>
+                            </Grid>
+
+                            <Grid Margin="0 0 0 0" Grid.Column="1">
+                                <TextBlock Text="{Binding Oznaka}"/>
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Label Content="Arheoloski obrađen:" Margin="57,331,367,170" FontSize="22" FontWeight="Bold"/>
+            <CheckBox x:Name="arheoloskiObradjen" BorderBrush="Black" Margin="315,350,180,182"  IsChecked="{Binding Path=Spomenik.Arheoloski_obradjen,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" FontSize="22" FontWeight="Bold"/>
+            <Label Content="Na listi UNESCO:" Margin="57,381,340,116" FontSize="22" FontWeight="Bold"/>
+            <CheckBox x:Name="naListiUnesco" BorderBrush="Black" Margin="315,399,247,131" IsChecked="{Binding Path=Spomenik.Na_listi_UNESCO,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" FontWeight="Bold"/>
+            <Label Content="U naseljenom regionu:" Margin="57,430,340,64" FontSize="22" FontWeight="Bold"/>
+            <CheckBox x:Name="uNaseljenomRegionu" BorderBrush="Black" Margin="315,446,285,85" IsChecked="{Binding Path=Spomenik.U_naseljenom_regionu,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label x:Name="labelE" Content="" FontWeight="Bold" Margin="10,295,10,201" Height="50"/>
+            <Button x:Name="Dodaj" Content="Doda_j" Cursor="Hand" Background="#FF168AA4" Margin="293,0,222,58" FontWeight="Bold" Click="Dodaj_Click" RenderTransformOrigin="0.127,2.773" Height="68" VerticalAlignment="Bottom" Grid.RowSpan="2" FontSize="30" FontFamily="MV Boli" />
+            <Button x:Name="Odustani" Content="Od_ustani" Cursor="Hand" Background="#FF168AA4" Margin="450,0,60,58" FontWeight="Bold" Click="Odustani_Click" RenderTransformOrigin="0.127,2.773" Height="68" VerticalAlignment="Bottom" Grid.RowSpan="2" FontSize="30" FontFamily="MV Boli" />
+
+
+        </Grid>
+
+
+        <Grid>
+            <Frame x:Name="Sp" NavigationUIVisibility="Hidden" Margin="0,0,-648,0"/>
+        </Grid>
+
+
+    </Grid>
+</Page>

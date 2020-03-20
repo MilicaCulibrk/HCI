@@ -1,0 +1,291 @@
+﻿<Page x:Class="Projekat.TableS"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="775"
+      Title="TableS" Height="630" Width="1300">
+
+    <Page.Resources>
+        <Style x:Key="Body_Content_DataGrid_Centering"
+        TargetType="{x:Type DataGridCell}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width ="70*"/>
+            <ColumnDefinition Width ="30*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height ="9*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0"  Background="#FF168AA4" Height="50" VerticalAlignment="Bottom">
+
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="70*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <TextBlock  VerticalAlignment="Center"  FontWeight="DemiBold"
+                       Foreground="#FFE8EBEC" Background="#FF168AA4" Margin="6 0 0 0" FontSize="24">Filtriraj:</TextBlock>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <ComboBox x:Name="combo" VerticalAlignment="Center" SelectedIndex="{Binding OpcijaPretrage}" Height="44" FontSize="24">
+                        <ComboBoxItem>Sva polja</ComboBoxItem>
+                        <ComboBoxItem>Oznaka</ComboBoxItem>
+                        <ComboBoxItem>Naziv</ComboBoxItem>
+                        <ComboBoxItem>Tip</ComboBoxItem>
+                        <ComboBoxItem>Etiketa</ComboBoxItem>
+                        <ComboBoxItem>Prihod od turizma</ComboBoxItem>
+
+                    </ComboBox>
+                </Grid>
+
+                <Grid Grid.Column="2">
+                    <TextBox x:Name="poljePretrage" FontSize="24" VerticalAlignment="Center" Height="42" Margin="10,5,96,3" KeyUp="TextBox_KeyUp"></TextBox>
+                    <Button x:Name="clearFilter" Cursor="Hand" Content="Ponisti"  Click="clearFilter_Click" Grid.Row="0"  Margin="546,5,0,0" HorizontalAlignment="Left" Width="91" Height="42" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid Background="White"/>
+                <DataGrid  x:Name="TejblS"  ItemsSource="{Binding Path=Spomenici}" IsReadOnly="True" AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True" Margin="22,72,0,0" ColumnWidth="*"   HorizontalAlignment="Left" VerticalAlignment="Top" Height="335" Width="864">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Oznaka" Binding="{Binding Id}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Naziv" FontWeight="SemiBold" Binding="{Binding Naziv}"></DataGridTextColumn>
+
+                        <DataGridTemplateColumn Header="Opis" Width="2*">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ScrollViewer VerticalScrollBarVisibility="Auto" MaxHeight="50">
+                                        <TextBlock Text="{Binding Opis}" TextWrapping="Wrap" />
+                                    </ScrollViewer>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTextColumn Header="Tip" Binding="{Binding Tip.Ime}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Era porekla" Binding="{Binding EraPorekla}"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding TuristickiStatus}" Header="Turisticki status"/>
+
+                        <DataGridTemplateColumn Header="Arheoloski obradjen" CanUserResize="False">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock>
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Text" Value="Ne" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Arheoloski_obradjen}" Value="True">
+                                                        <Setter Property="Text" Value="Da" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="U naseljenom regionu" CanUserResize="False">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock>
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Text" Value="Ne" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding U_naseljenom_regionu}" Value="True">
+                                                        <Setter Property="Text" Value="Da" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="Na listi Unesco" CanUserResize="False">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock>
+                                        <TextBlock.Style>
+                                            <Style TargetType="TextBlock">
+                                                <Setter Property="Text" Value="Ne" />
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Na_listi_UNESCO}" Value="True">
+                                                        <Setter Property="Text" Value="Da" />
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </TextBlock.Style>
+                                    </TextBlock>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTextColumn Header="Prihod" Binding="{Binding GPrihod}"></DataGridTextColumn>
+                        <DataGridTextColumn Binding="{Binding Datum}" Header="Datum otkrivanja"/>
+
+                        <DataGridTemplateColumn Header="Lista etiketa">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ItemsControl ItemsSource="{Binding Etikete, UpdateSourceTrigger=LostFocus}">
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <StackPanel>
+                                                    <TextBlock Text="{Binding Oznaka}"/>
+                                                    <Rectangle Width="10" Height="10" Fill="{Binding Boja}" />
+                                                </StackPanel>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <DataGridTemplateColumn Header="Ikonica">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Width="24" Height="24" Source="{Binding Ikonica}" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+
+                    </DataGrid.Columns>
+
+
+                </DataGrid>
+                <Label x:Name="Tip" Content="Tabela Spomenika" FontWeight="Bold" Foreground="#FF168AA4" FontSize="35" HorizontalAlignment="Left" Margin="321,0,0,0" VerticalAlignment="Top" Width="329" FontFamily="MV Boli" Height="76"/>
+                <Button x:Name="Obriši" Cursor="Hand"  Content="_Obrisi" Background="#FF168AA4" FontWeight="Bold" Click="Obrisi_Click" Margin="741,428,24,69" FontSize="32" FontFamily="MV Boli"/>
+                <Button x:Name="Izmeni" Cursor="Hand" Content="_Izmeni"  Background="#FF168AA4" FontWeight="Bold" Click="Izmeni_Click" Margin="574,428,190,69" FontSize="32" FontFamily="MV Boli"/>
+                <Button x:Name="Dodajj" Cursor="Hand" Content="_Dodaj" Background="#FF168AA4" FontWeight="Bold" Click="Dodaj_Click" Margin="414,428,362,69" FontSize="32" FontFamily="MV Boli"/>
+            </Grid>
+        </Grid>
+        <Grid Grid.Column="1" Background="#FF168AA4" Margin="0,13,0,0">
+            <Grid x:Name="GridMenu"  Margin="5,5,20,40" Background="#FFE8EBEC">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Top"/>
+                <Expander ExpandDirection="Down" IsExpanded="False" Header="Pretraga" VerticalAlignment="Top" FontFamily="MV Boli" FontSize="36" Height="560" Margin="0,10,0,0" Foreground="#FF168AA4">
+                    <Grid>
+                        <Label Content="Oznaka:" HorizontalAlignment="Right" Height="33" VerticalAlignment="Top" Width="85" Margin="0,59,278,0" FontSize="20" FontFamily="Segoe UI"/>
+                        <Label Content="Naziv:" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="75" Margin="0,92,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <!-- <Label Content="Opis" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="62" Margin="0,70,0,0" FontFamily="Segoe UI" FontSize="20"/> -->
+                        <!--   <Label Content="Ikonica" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="75" Margin="0,110,0,0" FontFamily="Segoe UI" FontSize="20"/> -->
+                        <Label Content="Etikete:" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="75" Margin="0,148,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="Tip:" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="75" Margin="0,183,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="Era porekla:" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="116" Margin="0,217,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="Turistički status:" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="150" Margin="0,258,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="Arheološki obrađen:" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="190" Margin="0,298,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="Na listi UNESCO:" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="159" Margin="0,335,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="U naseljenom regionu:" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="209" Margin="0,373,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="Datum:" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="75" Margin="0,410,0,0" FontFamily="Segoe UI" FontSize="20"/>
+                        <Label Content="Prihod:" HorizontalAlignment="Left" Height="44" VerticalAlignment="Top" Width="75" Margin="0,444,0,0" FontFamily="Segoe UI" FontSize="20"/>
+
+                        <TextBox x:Name="oznaka" BorderBrush="Black" HorizontalAlignment="Left" Height="29" Margin="112,0,0,401" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="241" FontSize="16" FontFamily="Segoe UI"/>
+                        <TextBox x:Name="naziv" BorderBrush="Black" HorizontalAlignment="Left" Height="30" Margin="112,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241" FontSize="16" FontFamily="Segoe UI"/>
+                        <!--   <TextBox x:Name="opis" HorizontalAlignment="Left" Height="25" Margin="112,74,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="241" FontSize="12" FontFamily="Segoe UI"/>
+                       <Border BorderThickness="1" BorderBrush="#FF168AA4" Margin="112,113,215,360" RenderTransformOrigin="0.5,0.5"  Height="25" Width="25">
+                            <Image x:Name="ikonica"  HorizontalAlignment="Left" Height="24" Margin="0,0,-1,-1" VerticalAlignment="Top" Width="24"/>
+                        </Border> 
+                        <Button Content="Ucitaj" HorizontalAlignment="Left" Margin="196,113,0,0" VerticalAlignment="Top" Width="113" Height="25" FontSize="12" FontFamily="Segoe UI"  Click="Ucitaj_Click"/> -->
+                        <ListBox x:Name="etiketeList" BorderBrush="Black" SelectionMode="Multiple"  ItemsSource="{Binding Path=Etikete2, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="46" Margin="112,137,0,0" VerticalAlignment="Top" Width="241"  ScrollViewer.VerticalScrollBarVisibility="Visible" FontSize="12" FontFamily="Segoe UI">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Grid Margin="0 0 10 0 " Grid.Column="0" >
+                                            <Rectangle Width="100" Fill="{Binding Path=Boja}"></Rectangle>
+                                        </Grid>
+
+                                        <Grid Margin="0 0 0 0" Grid.Column="1">
+                                            <TextBlock Text="{Binding Oznaka}"/>
+                                        </Grid>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ComboBox x:Name="izaberiTip" BorderBrush="Black" HorizontalAlignment="Left" Height="29" Margin="196,188,0,0" VerticalAlignment="Top" Width="157" IsEditable="False"  ItemsSource="{Binding Path=Tipovi2, UpdateSourceTrigger=PropertyChanged}" FontSize="12" FontFamily="Segoe UI">
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Ime}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <ComboBox x:Name="era_porekla" BorderBrush="Black" HorizontalAlignment="Left" Height="31" Margin="196,222,0,0" VerticalAlignment="Top" Width="157" FontSize="12" FontFamily="Segoe UI" SelectedIndex="{Binding OpcijaPretrage2}" SelectedItem="null">
+                            <ComboBoxItem Content=""/>
+                            <ComboBoxItem Content="Paleolit"/>
+                            <ComboBoxItem Content="Neolit"/>
+                            <ComboBoxItem Content="Stari vek"/>
+                            <ComboBoxItem Content="Srednji vek"/>
+                            <ComboBoxItem Content="Renesansa"/>
+                            <ComboBoxItem Content="Moderno doba"/>
+                        </ComboBox>
+                        <ComboBox x:Name="turisticki" BorderBrush="Black" HorizontalAlignment="Left" Height="30" Margin="196,258,0,0" VerticalAlignment="Top" Width="157" FontSize="12" FontFamily="Segoe UI"  SelectedIndex="{Binding OpcijaPretrage3}" SelectionChanged="Turisticki_SelectionChanged" SelectedItem="null">
+                            <ComboBoxItem Content=""/>
+                            <ComboBoxItem Content="Eksploatisan"/>
+                            <ComboBoxItem Content="Dostupan"/>
+                            <ComboBoxItem Content="Nedostupan"/>
+                        </ComboBox>
+                        <StackPanel Margin="209,312,0,163"  Orientation="Horizontal">
+                            <RadioButton x:Name="arh_obradjenDA" BorderBrush="Black" Content="da" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="40" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI" />
+                            <RadioButton x:Name="arh_obradjenNE"  BorderBrush="Black" Content="ne" HorizontalAlignment="Left" Height="23"  VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI"/>
+                            <RadioButton x:Name="arh_obradjenSVEJEDNO" BorderBrush="Black" Content="svejedno" HorizontalAlignment="Left" Height="23" VerticalAlignment="Bottom" Width="75" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI" IsChecked="True"/>
+                        </StackPanel>
+                        <StackPanel Margin="209,349,0,125" Orientation="Horizontal">
+                            <RadioButton x:Name="unescoDA" BorderBrush="Black" Content="da" HorizontalAlignment="Left" Height="23"  VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI" />
+                            <RadioButton x:Name="unescoNE"  BorderBrush="Black" Content="ne" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI"/>
+                            <RadioButton x:Name="unescoSVEJEDNO" BorderBrush="Black" Content="svejedno" HorizontalAlignment="Left" Height="23"  VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI" IsChecked="True"/>
+                        </StackPanel>
+                        <StackPanel Margin="209,385,0,88" Orientation="Horizontal">
+                            <RadioButton x:Name="regionDA" BorderBrush="Black" Content="da" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI" />
+                            <RadioButton x:Name="regionNE" BorderBrush="Black" Content="ne" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="37" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI"/>
+                            <RadioButton x:Name="regionSVEJEDNO" BorderBrush="Black" Content="svejedno" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="71" RenderTransformOrigin="0.469,0.678" FontSize="12" FontFamily="Segoe UI" IsChecked="True"/>
+                        </StackPanel>
+                        <DatePicker x:Name="datum" BorderBrush="Black" RenderTransformOrigin="1.008,1.525" Margin="124,415,10,54" FontSize="12" FontFamily="Segoe UI"/>
+                        <TextBox x:Name="prihod" BorderBrush="Black" HorizontalAlignment="Left" Height="27" Margin="125,0,0,22" TextWrapping="Wrap" Text="" VerticalAlignment="Bottom" Width="228" RenderTransformOrigin="0.5,0.5" FontSize="14" FontFamily="Segoe UI"/>
+
+                        <Button x:Name="Pret" Cursor="Hand"  Content="Pre_trazi" Background="#FF168AA4" FontWeight="Bold" Click="Pretrazi_Click" Margin="24,10,204,439"  RenderTransformOrigin="0.5,0.5" FontSize="30" FontFamily="MV Boli" />
+                        <Button x:Name="Ponisti" Cursor="Hand"  Content="_Ponisti" Background="#FF168AA4" FontWeight="Bold" Margin="196,10,28,439"  RenderTransformOrigin="0.5,0.5" Click="Ponisti_Click" FontSize="30" FontFamily="MV Boli"/>
+
+                    </Grid>
+                </Expander>
+            </Grid>
+        </Grid>
+
+
+        <Grid>
+            <Frame x:Name="FrejmIzmeni" NavigationUIVisibility="Hidden" Margin="0,0,-390,0"/>
+        </Grid>
+
+    </Grid>
+</Page>

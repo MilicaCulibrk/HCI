@@ -1,0 +1,63 @@
+﻿<Window x:Class="Projekat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat"
+        xmlns:cmd="clr-namespace:Projekat.Komande"
+        mc:Ignorable="d"
+        Icon="pack://siteoforigin:,,,/Images/icon.png"
+        Title="Evidencija o mapi svetskih kulturnih spomenika"  Height="700" Width="1300" WindowStartupLocation="CenterScreen" Closing="Window_Closing" ResizeMode="NoResize">
+
+    <Window.CommandBindings>
+       <CommandBinding Command="cmd:RoutedCommands.PrikazPocetne" CanExecute="PrikazPocetne_CanExecute" Executed="PrikazPocetne_Executed" ></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.PrikazTipa" CanExecute="PrikazTipa_CanExecute" Executed="PrikazTipa_Executed" ></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.PrikazEtikete" CanExecute="PrikazEtikete_CanExecute" Executed="PrikazEtikete_Executed" ></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.PrikazSpomenika" CanExecute="PrikazSpomenika_CanExecute" Executed="PrikazSpomenika_Executed" ></CommandBinding>
+        <CommandBinding Command="cmd:RoutedCommands.PrikazMape" CanExecute="PrikazMape_CanExecute" Executed="PrikazMape_Executed" ></CommandBinding>
+        
+    </Window.CommandBindings>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="10*"/>
+            <RowDefinition Height ="90*"/>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Button x:Name="PočetnaStranica" ToolTip="Ctrl + P"  Command="cmd:RoutedCommands.PrikazPocetne"  Background="#FFE8EBEC" FontSize="22" FontWeight="Bold" Content="POCETNA STRANICA" Cursor="Hand" BorderThickness="0" BorderBrush="#FFE8EBEC" FontFamily="MV Boli" Foreground="#FF168AA4" Click="Pocetna_Click"/>
+           </Grid>
+            <Grid Grid.Column="3">
+                <Button x:Name="Spomenici" ToolTip="Ctrl + S"  Command="cmd:RoutedCommands.PrikazSpomenika"  Background="#FFE8EBEC" FontSize="22" FontWeight="Bold" Content="SPOMENICI" Cursor="Hand" BorderThickness="0"  BorderBrush="#FFE8EBEC" FontFamily="MV Boli" Foreground="#FF168AA4" Click="Spomenik_Click"/>
+            </Grid>
+            <Grid Grid.Column="2">
+                <Button x:Name="Etikete"  ToolTip="Ctrl + E"  Command="cmd:RoutedCommands.PrikazEtikete"  Background="#FFE8EBEC" FontSize="22" FontWeight="Bold" Content="ETIKETE" Cursor="Hand" BorderThickness="0"  BorderBrush="#FFE8EBEC" FontFamily="MV Boli" Foreground="#FF168AA4" Click="Etiketa_Click"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Button x:Name="Tipovi"  Command="cmd:RoutedCommands.PrikazTipa"   ToolTip="Ctrl + T" Background="#FFE8EBEC" FontSize="22" FontWeight="Bold" Content="TIPOVI" Cursor="Hand" BorderThickness="0"  BorderBrush="#FFE8EBEC" FontFamily="MV Boli" Foreground="#FF168AA4" Click="Tip_Click"/>
+            </Grid>
+            <Grid Grid.Column="4">
+                <Button x:Name="MapaSveta"  ToolTip="Ctrl + M"  Command="cmd:RoutedCommands.PrikazMape"  Background="#FFE8EBEC" FontSize="22" FontWeight="Bold" Content="MAPA" Cursor="Hand" BorderThickness="0"  BorderBrush="#FFE8EBEC" FontFamily="MV Boli" Foreground="#FF168AA4" Click="Mapa_Click"/>
+                
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Frame x:Name="Main" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+    </Grid>
+</Window>
+

@@ -1,0 +1,59 @@
+﻿<Page x:Class="Projekat.IzmenaTipa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="IzmenaTipa"  >
+    
+    <Grid>
+        <Grid Background="White">
+
+        <Label x:Name="label" Content="Oznaka" FontWeight="SemiBold" FontSize="25" HorizontalAlignment="Left" Margin="83,104,0,0" VerticalAlignment="Top" Height="41" Width="257"/>
+        <Label x:Name="label1" Content="Ime" FontWeight="SemiBold" FontSize="25" HorizontalAlignment="Left" Margin="83,184,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.327,-0.936" Width="151" Height="78">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.38"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.486"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+
+        <TextBox x:Name="textBoxOznaka" HorizontalAlignment="Left" Height="55" Margin="197,90,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="313">
+            <Binding Path="Oznaka"  TargetNullValue="Enter.."  UpdateSourceTrigger="PropertyChanged"></Binding>
+        </TextBox>
+
+        <TextBox x:Name="textBoxIme" HorizontalAlignment="Left" Height="55" Margin="197,167,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="313" >
+            <Binding Path="Ime"  TargetNullValue="Enter.."  UpdateSourceTrigger="PropertyChanged"></Binding>
+        </TextBox>
+
+        <Label x:Name="Tip" Content="Izmena tipa" FontWeight="Bold" Foreground="#FF168AA4" FontSize="30" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="245"/>
+
+        <Label Content="Ikonica"  FontWeight="SemiBold" FontSize="25" Margin="83,346,497,64"/>
+        <Border BorderThickness="1" BorderBrush="Black"  Height="50" Width="50" Margin="197,332,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Image x:Name="iconica" Height="49" Width="50" Margin="-1,0,-1,-1" Source="{Binding Path=Ikonica,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" RenderTransformOrigin="-3.167,2.479" HorizontalAlignment="Left"/>
+        </Border>
+
+
+        <Button x:Name="Ucitaj" Content="Učitaj" HorizontalAlignment="Left" FontWeight="SemiBold" Margin="283,346,0,79" Width="113" RenderTransformOrigin="0.03,-4.225" Click="Ucitaj_Click" FontSize="18" />
+
+        <Label x:Name="OpisLabel" Content="Opis"  FontWeight="SemiBold" FontSize="25" HorizontalAlignment="Left" Margin="83,260,0,0" VerticalAlignment="Top" Height="42" Width="181"/>
+
+        <TextBox x:Name="TextBoxOpis" HorizontalAlignment="Left" Height="57" Margin="197,240,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="313" Text="{Binding Opis , UpdateSourceTrigger=PropertyChanged}"/>
+
+        <Button x:Name="Izmeni" Content="Izmeni"  FontWeight="Bold" HorizontalAlignment="Left" Margin="587,362,0,0" VerticalAlignment="Top" Width="148" Click="Izm_Click" Height="75" RenderTransformOrigin="0.5,0.5" FontSize="36"/>
+
+        </Grid>
+
+
+        <Grid>
+            <Frame x:Name="Frejm" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+     </Grid>
+</Page>
+  

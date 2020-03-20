@@ -1,0 +1,35 @@
+﻿<Page x:Class="Projekat.IzmenaEtikete"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="IzmenaEtikete">
+
+    <Grid Background="White">
+
+        <Label x:Name="label" Content="Oznaka" FontWeight="SemiBold" FontSize="15" HorizontalAlignment="Left" Margin="43,50,0,0" VerticalAlignment="Top" Height="28"/>
+        <Button Content="Izaberi boju"  FontWeight="SemiBold" FontSize="15" HorizontalAlignment="Left" Margin="43,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.327,-0.936" Width="169" Height="29" Click="Boje_Click"/>
+
+        <TextBox x:Name="textBoxOznaka" HorizontalAlignment="Left" Height="24" Margin="129,50,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="123">
+            <Binding Path="Oznaka"  UpdateSourceTrigger="Explicit"></Binding>
+        </TextBox>
+
+        <Rectangle Name="pokazivac" Fill="{Binding Path=Boja, UpdateSourceTrigger=Explicit, Mode=TwoWay}" HorizontalAlignment="Left" Height="29" Margin="276,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="34" RenderTransformOrigin="5.467,0.609"/> 
+
+        <Label x:Name="Etiketa" Content="Etiketa" FontWeight="Bold" Foreground="#FF168AA4" FontSize="24" HorizontalAlignment="Left" Margin="350,10,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="OpisLabel" Content="Opis" FontWeight="SemiBold" FontSize="15" HorizontalAlignment="Left" Margin="43,130,0,0" VerticalAlignment="Top" Height="28"/>
+
+        <TextBox x:Name="TextBoxOpis" HorizontalAlignment="Left" Height="57" Margin="43,170,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="197" Text="{Binding Opis , UpdateSourceTrigger=Explicit}"/>
+
+        <Button x:Name="Izmeni" Content="Izmeni" HorizontalAlignment="Left" Margin="43,250,0,0" VerticalAlignment="Top" Width="75" Click="Izm_Click"/>
+
+        <Grid>
+            <Frame x:Name="Frejm" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+    </Grid>
+</Page>

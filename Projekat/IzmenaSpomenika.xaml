@@ -1,0 +1,133 @@
+﻿<Page x:Class="Projekat.IzmenaSpomenika"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:System="clr-namespace:System;assembly=mscorlib"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="IzmenaSpomenika" Background="White">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <StackPanel>
+
+                <Label Content="Id:"  Margin="10 0 0 0"   FontWeight="Bold" />
+                <TextBox x:Name="idTxT"  Padding="2" Margin="10,2,39,20" TextWrapping="Wrap" Text="{Binding Path=Id, UpdateSourceTrigger=Explicit}"/>
+                <Label Content="Naziv:"  Margin=" 10 0 0 0"  FontWeight="Bold"/>
+                <TextBox x:Name="nazivTxT" Padding="2" Margin="10,2,39,20" TextWrapping="Wrap" Text="{Binding Path=Naziv, UpdateSourceTrigger=Explicit}" />
+
+                <Label Content="Opis:"  Margin=" 10 2 0 0"  FontWeight="Bold"/>
+                <TextBox x:Name="opisTxt" Padding="2" Margin="10,0,39,20" TextWrapping="Wrap" Text="{Binding Path=Opis, UpdateSourceTrigger=Explicit}"  AcceptsReturn="True" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto"/>
+
+
+
+                <StackPanel Orientation="Horizontal" Margin="10 0 0 0">
+                    <Label Content="Tip:"  Margin="10 0 10 0"  FontWeight="Bold" />
+                    <ComboBox x:Name="tipoviCbox"  Margin="10 0 10 0" VerticalAlignment="Top" Width="100" IsEditable="False" ItemsSource="{Binding Path=DodajSpomenik.Tipovi,UpdateSourceTrigger=Explicit}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Ime}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+
+
+                    <Label Content="Ikonica:"  Margin="0 0 10 0" FontWeight="Bold" />
+                    <Border BorderThickness="1" BorderBrush="Green" CornerRadius="3" Margin="0 0 8 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="25" Height="25">
+                        <Image x:Name="iconica"  Margin="0,0,0,0" VerticalAlignment="Top" Height="24"  Width="24" Source="{Binding Path=Ikonica, Mode=TwoWay, UpdateSourceTrigger=Explicit}"/>
+                    </Border>
+                    <Button Content="Učitaj" HorizontalAlignment="Left" Margin="0 0 8 0" VerticalAlignment="Bottom" Width="50" Click="Ucitaj_Click" />
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10 15 0 0">
+                    <Label Content="Era porekla:"  Margin="10 15 0 0"/>
+
+                    <ComboBox x:Name="eraPoreklaCbox"  Text="{Binding EraPorekla, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Width="100">
+                       <ComboBoxItem>Paleolit</ComboBoxItem>
+                        <ComboBoxItem>Neolit</ComboBoxItem>
+                        <ComboBoxItem>Stari vek</ComboBoxItem>
+                        <ComboBoxItem>Srednji vek</ComboBoxItem>
+                        <ComboBoxItem>Renesansa</ComboBoxItem>
+                        <ComboBoxItem>Moderno doba</ComboBoxItem> 
+                    </ComboBox>
+
+
+
+                    <Label Content="Turistički status:"  Margin="10 15 0 0" />
+
+                    <ComboBox Name="turistickiStatusCbox" Text="{Binding Path=turistickiSt, UpdateSourceTrigger=Explicit}" HorizontalAlignment="Left" Width="100"  Margin="10 15 0 0"  VerticalAlignment="Top">
+                        <ComboBoxItem Content="Eksploatisan"/>
+                        <ComboBoxItem Content="Dostupan"/>
+                        <ComboBoxItem Content="Nedostupan"/>
+                    </ComboBox>
+                  
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Label Content="Arheološki obrađen:"   Margin="0 0 10 0"/>
+                    <CheckBox x:Name="arheoloskiObradjen" Margin="0 6 10 0"  IsChecked="{Binding Path=Arheoloski_obradjen, UpdateSourceTrigger=Explicit}"/>
+                    <Label Content="Na listi UNESCO:"  Margin="0 0 10 0"/>
+                    <CheckBox x:Name="naListiUnesco"  Margin="0 6 10 0" IsChecked="{Binding Path=Na_listi_UNESCO, UpdateSourceTrigger=Explicit}"/>
+                    <Label Content="U naseljenom regionu:"  Margin="0 0 10 0"/>
+                    <CheckBox x:Name="uNaseljenomRegionu" Margin="0 6 10 0" IsChecked="{Binding Path=U_naseljenom_regionu, UpdateSourceTrigger=Explicit}"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Margin="10 10 0 0">
+                    <Label Content="Godišnji prihod od turizma:" Margin="10 2 10 0"/>
+                    <TextBox x:Name="prihodTxt" Padding="2" Margin="0 0 5 0" Width ="200" TextAlignment="Right" TextWrapping="Wrap" Text="{Binding Path=GPrihod, UpdateSourceTrigger=Explicit}"/>
+                    <TextBlock Text="USD" Margin="7 10 0 0" Foreground="Green"/>
+                </StackPanel>
+
+                <Label Content="Datum otkrivanja:" Margin="10 5 0 0"/>
+                <DatePicker x:Name="datePicker" SelectedDate="{Binding Datum, UpdateSourceTrigger=Explicit}" Text="{Binding Datum, UpdateSourceTrigger=Explicit}"/>
+            </StackPanel>
+
+        </Grid>
+
+
+        <Grid Grid.Column="1">
+            <StackPanel>
+                <Label Content="Etikete:"  Margin="24,0,10,0"/>
+                <ListBox x:Name="etiketeList" SelectionMode="Multiple"  VerticalAlignment="Top" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="308" Margin="24,0,10,0" ItemsSource="{Binding Path=DodajSpomenik.Etikete,UpdateSourceTrigger=Explicit}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid Margin="0 0 10 0 " Grid.Column="0" >
+                                    <Rectangle Width="100" Fill="{Binding Path=Boja}"></Rectangle>
+                                </Grid>
+
+                                <Grid Margin="0 0 0 0" Grid.Column="1">
+                                    <TextBlock Text="{Binding Oznaka}"/>
+                                </Grid>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Button x:Name="Izmeni" Content="IZMENI" Margin="80,70,20,0" FontWeight="Bold" RenderTransformOrigin="0.127,2.773" Click="Izm_Click" />
+
+            </StackPanel>
+        </Grid>
+
+
+        <Grid>
+            <Frame x:Name="Sp" NavigationUIVisibility="Hidden" Margin="0,0,-243,0"/>
+        </Grid>
+
+
+
+    </Grid>
+</Page>

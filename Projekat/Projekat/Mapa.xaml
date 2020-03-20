@@ -1,0 +1,69 @@
+﻿<Page x:Class="Projekat.Mapa"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="775"
+      Title="Mapa"  Height="630" Width="1300">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Background="AliceBlue">
+
+            <Canvas Name="canvasMapa"
+                AllowDrop="True" DragEnter="canvasMapa_DragEnter" Drop="canvasMapa_Drop" MouseLeftButtonDown="canvasMapa_MouseLeftButtonDown" MouseMove="canvasMapa_MouseMove" MouseRightButtonDown="canvasMapa_MouseRightButtonDown"   >
+                <Canvas.Background>
+                    <ImageBrush x:Name="mapaImg" Stretch="Fill"/>
+                </Canvas.Background>
+            </Canvas>
+
+            <Frame x:Name="Mapp" NavigationUIVisibility="Hidden"/>
+
+        </Grid>
+
+
+        <Grid Grid.Column="1" Background="#FF168AA4">
+        
+                <TreeView x:Name="TipoviSp" ItemsSource="{Binding Path=TipoviTree, Mode=TwoWay}"
+                    PreviewMouseLeftButtonDown="spomenici_PreviewMouseLeftButtonDown"
+                    MouseMove="spomenici_MouseMove" Height="589" Margin="10,10,23,43" >
+                    <TreeView.Resources >
+                        <HierarchicalDataTemplate DataType="{x:Type local:Tip}" ItemsSource="{Binding SpomeniciUtipu}" >
+
+
+                            <StackPanel Orientation="Horizontal">
+                                <Image Margin="0,0,5,0"  Source="{Binding Ikonica}"  Width="40" Height="40">
+
+                                </Image>
+
+                                <TextBlock Text="{Binding Ime}" FontSize="30" FontWeight="Bold"/>
+
+                            </StackPanel>
+                        </HierarchicalDataTemplate>
+                        <DataTemplate DataType="{x:Type local:Spomenik}">
+                            <StackPanel Orientation="Horizontal" Cursor="Hand">
+                                <Image  Width="30" Height="30" Source="{Binding Ikonica}"/>
+                                <TextBlock Text="{Binding Id}" FontSize="24"/>
+                                <TextBlock Text=" (" FontSize="24"/>
+                                <TextBlock Text="{Binding Naziv}" FontSize="24"/>
+                                <TextBlock Text=")" FontSize="24"/>
+                            </StackPanel>
+                        </DataTemplate>
+
+                    </TreeView.Resources>
+                </TreeView>
+            
+        </Grid>
+
+        <Grid Grid.Column="0">
+            <Frame x:Name="Map" NavigationUIVisibility="Hidden" Margin="0,0,-699,0"/>
+        </Grid>
+    </Grid>
+</Page>

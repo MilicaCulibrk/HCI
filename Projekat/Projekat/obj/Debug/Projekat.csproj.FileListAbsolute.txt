@@ -1,0 +1,343 @@
+C:\Users\C\Desktop\HCI\Projekat\Projekat\bin\Debug\Projekat.exe.config
+C:\Users\C\Desktop\HCI\Projekat\Projekat\bin\Debug\Projekat.exe
+C:\Users\C\Desktop\HCI\Projekat\Projekat\bin\Debug\Projekat.pdb
+C:\Users\C\Desktop\HCI\Projekat\Projekat\bin\Debug\MaterialDesignColors.dll
+C:\Users\C\Desktop\HCI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\C\Desktop\HCI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\C\Desktop\HCI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.csprojAssemblyReference.cache
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\DodajEtiketu.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\DodajSpomenik.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\DodajTip.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\EtiketaForm.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\IzmenaEtikete.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\IzmenaSpomenika.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\IzmenaTipa.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\MainWindow.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Mapa.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Pocetna.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Postavi.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Sp.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\SpomenikForm.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Tabela.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\TabelaE.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\TableS.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\TipForm.baml
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\DodajSpomenik.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\DodajTip.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\EtiketaForm.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\IzmenaEtikete.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\IzmenaSpomenika.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\IzmenaTipa.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\MainWindow.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Mapa.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Pocetna.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Postavi.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Sp.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\SpomenikForm.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Tabela.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\TabelaE.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\TableS.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\TipForm.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\App.g.cs
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.cache
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.lref
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.g.resources
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.Properties.Resources.resources
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.csproj.GenerateResource.cache
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.csproj.CopyComplete
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.exe
+C:\Users\C\Desktop\HCI\Projekat\Projekat\obj\Debug\Projekat.pdb
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.csprojAssemblyReference.cache
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\DodajSpomenik.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\DodajTip.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\EtiketaForm.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\IzmenaEtikete.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\IzmenaSpomenika.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\IzmenaTipa.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\MainWindow.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Mapa.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Pocetna.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Postavi.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Sp.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\SpomenikForm.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Tabela.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\TabelaE.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\TableS.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\TipForm.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\App.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.cache
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.lref
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\Projekat.exe.config
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\Projekat.exe
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\Projekat.pdb
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\MaterialDesignColors.dll
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\DodajEtiketu.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\DodajSpomenik.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\DodajTip.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\EtiketaForm.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\IzmenaEtikete.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\IzmenaSpomenika.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\IzmenaTipa.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\MainWindow.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Mapa.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Pocetna.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Postavi.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Sp.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\SpomenikForm.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Tabela.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\TabelaE.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\TableS.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\TipForm.baml
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.g.resources
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.Properties.Resources.resources
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.csproj.GenerateResource.cache
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.csproj.CopyComplete
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.exe
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Projekat.pdb
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Brisanje.g.cs
+C:\Users\C\Desktop\HCI\STARO\Projekat\Projekat\obj\Debug\Brisanje.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.csprojAssemblyReference.cache
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Brisanje.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\DodajSpomenik.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\DodajTip.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\EtiketaForm.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\IzmenaEtikete.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\IzmenaSpomenika.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\IzmenaTipa.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\MainWindow.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Mapa.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Pocetna.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Postavi.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Sp.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\SpomenikForm.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Tabela.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\TabelaE.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\TableS.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\TipForm.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\App.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.cache
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.lref
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.exe
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.pdb
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\Projekat.exe.config
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\Projekat.exe
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\Projekat.pdb
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\MaterialDesignColors.dll
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Brisanje.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\DodajEtiketu.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\DodajSpomenik.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\DodajTip.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\EtiketaForm.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\IzmenaEtikete.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\IzmenaSpomenika.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\IzmenaTipa.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\MainWindow.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Mapa.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Pocetna.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Postavi.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Sp.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\SpomenikForm.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Tabela.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\TabelaE.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\TableS.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\TipForm.baml
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.g.resources
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.Properties.Resources.resources
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.csproj.GenerateResource.cache
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Projekat.csproj.CopyComplete
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Mapa2.g.cs
+C:\Users\C\Desktop\PRESEK\Projekat\Projekat\obj\Debug\Mapa2.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\Projekat.exe.config
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\Projekat.exe
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\Projekat.pdb
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\MaterialDesignColors.dll
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.csprojAssemblyReference.cache
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Brisanje.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\DodajSpomenik.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\DodajTip.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\EtiketaForm.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\IzmenaEtikete.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\IzmenaSpomenika.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\IzmenaTipa.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\MainWindow.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Mapa.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Mapa2.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Pocetna.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Postavi.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Sp.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\SpomenikForm.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Tabela.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\TabelaE.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\TableS.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\TipForm.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\App.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.cache
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.lref
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Brisanje.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\DodajEtiketu.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\DodajSpomenik.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\DodajTip.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\EtiketaForm.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\IzmenaEtikete.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\IzmenaSpomenika.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\IzmenaTipa.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\MainWindow.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Mapa.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Mapa2.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Pocetna.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Postavi.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Sp.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\SpomenikForm.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Tabela.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\TabelaE.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\TableS.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\TipForm.baml
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.g.resources
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.Properties.Resources.resources
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.csproj.GenerateResource.cache
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.csproj.CopyComplete
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.exe
+C:\Users\C\Desktop\ORI\Projekat\Projekat\obj\Debug\Projekat.pdb
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\Projekat.exe.config
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\Projekat.exe
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\Projekat.pdb
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\MaterialDesignColors.dll
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.csprojAssemblyReference.cache
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Brisanje.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\DodajSpomenik.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\DodajTip.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\EtiketaForm.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\IzmenaEtikete.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\IzmenaSpomenika.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\IzmenaTipa.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\MainWindow.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Mapa.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Mapa2.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Pocetna.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Postavi.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Sp.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\SpomenikForm.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Tabela.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\TabelaE.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\TableS.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\TipForm.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\App.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.cache
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.lref
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Brisanje.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\DodajEtiketu.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\DodajSpomenik.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\DodajTip.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\EtiketaForm.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\IzmenaEtikete.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\IzmenaSpomenika.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\IzmenaTipa.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\MainWindow.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Mapa.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Mapa2.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Pocetna.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Postavi.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Sp.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\SpomenikForm.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Tabela.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\TabelaE.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\TableS.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\TipForm.baml
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.g.resources
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.Properties.Resources.resources
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.csproj.GenerateResource.cache
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.csproj.CoreCompileInputs.cache
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.csproj.CopyComplete
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.exe
+C:\Users\C\Desktop\HCI projekti\ORI\Projekat\Projekat\obj\Debug\Projekat.pdb
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\Projekat.exe.config
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\Projekat.exe
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\Projekat.pdb
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\MaterialDesignColors.dll
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat.csprojAssemblyReference.cache
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Brisanje.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\DodajEtiketu.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\DodajSpomenik.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\DodajTip.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\EtiketaForm.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\IzmenaEtikete.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\IzmenaSpomenika.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\IzmenaTipa.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\MainWindow.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Mapa.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Mapa2.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Pocetna.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Postavi.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Sp.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\SpomenikForm.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Tabela.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\TabelaE.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\TableS.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\TipForm.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\App.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.cache
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat_MarkupCompile.lref
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Brisanje.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\DodajEtiketu.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\DodajSpomenik.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\DodajTip.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\EtiketaForm.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\IzmenaEtikete.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\IzmenaSpomenika.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\IzmenaTipa.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\MainWindow.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Mapa.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Mapa2.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Pocetna.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Postavi.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Sp.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\SpomenikForm.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Tabela.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\TabelaE.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\TableS.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\TipForm.baml
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat.g.resources
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat.Properties.Resources.resources
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat.csproj.GenerateResource.cache
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat.csproj.CopyComplete
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat.exe
+C:\Users\Milica Culibrk\Desktop\FAKS\SESTI SEMESTAR\Projekat\Projekat\Projekat\obj\Debug\Projekat.pdb

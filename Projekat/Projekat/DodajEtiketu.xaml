@@ -1,0 +1,47 @@
+﻿<Page x:Class="Projekat.DodajEtiketu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="775"
+      Title="DodajEtiketu"   Height="630" Width="1300">
+
+    <Grid>
+
+        <Grid Background="White"/>
+
+        <Label x:Name="label" Content="Oznaka:" FontWeight="Bold" FontSize="35" HorizontalAlignment="Left" Margin="224,156,0,0" VerticalAlignment="Top" Height="75" Width="269"/>
+        <Button Content="Izaberi boju" FontWeight="Bold" FontSize="24" HorizontalAlignment="Left" Margin="609,383,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.327,-0.936" Width="203" Height="57" Click="Boje_Click"/>
+        <Rectangle x:Name="pokazivac" Stroke="Black"  HorizontalAlignment="Left"  Margin="385,362,0,190"  Width="108"/>
+
+
+        <!--  <xctk:ColorPicker  SelectedColor="{Binding Path=Boja ,UpdateSourceTrigger=PropertyChanged}" x:Name="ClrPcker_Background" Margin="43,90,0,0"/> -->
+
+        <TextBox x:Name="textBoxOznaka" BorderBrush="Black" HorizontalAlignment="Left" Height="72" Margin="385,131,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="427" FontSize="35">
+            <Binding Path="Oznaka"  TargetNullValue="Enter.."  UpdateSourceTrigger="PropertyChanged"></Binding>
+        </TextBox>
+
+
+        <!-- <TextBox x:Name="textBoxBoja" HorizontalAlignment="Left" Height="23" Margin="129,90,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="123" >
+            <Binding Path="Boja"  TargetNullValue="Enter.."  UpdateSourceTrigger="PropertyChanged"></Binding>
+        </TextBox> -->
+
+        <Label x:Name="Etiketa" Content="Dodavanje Etikete" FontWeight="Bold" Foreground="#FF168AA4" FontSize="40" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" Width="489" FontFamily="MV Boli"/>
+
+        <Label x:Name="OpisLabel" Content="Opis:"  FontWeight="Bold" FontSize="35" HorizontalAlignment="Left" Margin="224,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.327,-0.936" Height="74" Width="232"/>
+
+        <Label x:Name="BojaLabel" Content="Boja:" FontWeight="Bold" FontSize="35" HorizontalAlignment="Left" Margin="224,392,0,0" VerticalAlignment="Top" Height="200" Width="151"/>
+
+        <Button x:Name="Dodaj" Content="Dodaj" Background="#FF168AA4" HorizontalAlignment="Left" Margin="787,485,0,0" VerticalAlignment="Top" Width="194" Click="DodajEtiketu_Click" Height="93" FontSize="36" FontFamily="MV Boli" FontWeight="Bold"/>
+        <Button x:Name="Odustani" Content="Odustani" Background="#FF168AA4" HorizontalAlignment="Left" Margin="1031,485,0,0" VerticalAlignment="Top" Width="201" Click="Odustani_Click" Height="93" FontSize="36" FontFamily="MV Boli" FontWeight="Bold"/>
+
+
+        <TextBox x:Name="TextBoxOpis" BorderBrush="Black" HorizontalAlignment="Left" Height="77" Margin="385,236,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="427" Text="{Binding Opis , UpdateSourceTrigger=PropertyChanged}" FontSize="35"/>
+        <Grid>
+            <Frame x:Name="Fr" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+    </Grid>
+</Page>
