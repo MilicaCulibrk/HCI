@@ -7,7 +7,7 @@ A simple WPF application for tracking the geographic distribution of world monum
 # Authors
  - @MilicaCulibrk
 
-Prerequisites
+# Prerequisites
 - Microsoft Windows OS
 - Microsoft Visual Studio 2015 or newer
 
